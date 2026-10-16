@@ -1,0 +1,38 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "question": "What is the output of 3 ** 2?",
+    "option_a": "6",
+    "option_b": "8",
+    "option_c": "9",
+    "option_d": "5",
+    "correct_answer": "option_c"
+}
+
+###
+GET http://127.0.0.1:8000/questions/1/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/questions/2/
+Content-Type: application/json
+
+{
+    "question": "What is the output of 10 % 3?",
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "0",
+    "correct_answer": "option_a"
+}
+
+###
+DELETE http://127.0.0.1:8000/questions/4/
+Content-Type: application/json 
+
